@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string-array name="navigation_menu_items">
+		<item>Dashboard</item>
+		<item>Map</item>
+		<item>Shifts</item>
+		<item>Upcoming</item>
+		<item>Accounts</item>
+		<item>Profile</item>
+	</string-array>
+</resources>

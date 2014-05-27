@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+	<item android:state_checked="true" android:state_focused="true"
+	      android:drawable="@drawable/theme_dial_white_filled" />
+	<item android:state_checked="false" android:state_focused="true"
+	      android:drawable="@drawable/theme_dial_white_hollow" />
+	<item android:state_checked="false"
+	      android:drawable="@drawable/theme_dial_white_hollow" />
+	<item android:state_checked="true"
+	      android:drawable="@drawable/theme_dial_white_filled" />
+</selector><!-- From: file:/C:/Users/David/Documents/GitHub/Cab9Drivers/Cab9D/src/main/res/drawable/theme_selector_toggle_round.xml -->

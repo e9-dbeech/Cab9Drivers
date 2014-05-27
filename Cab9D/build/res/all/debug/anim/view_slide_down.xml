@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android">
+	<translate
+           android:duration="@android:integer/config_mediumAnimTime"
+           android:fromYDelta="0"
+           android:toYDelta="-90%p"
+           />
+</set><!-- From: file:/C:/Users/David/Documents/GitHub/Cab9Drivers/Cab9D/src/main/res/anim/view_slide_down.xml -->

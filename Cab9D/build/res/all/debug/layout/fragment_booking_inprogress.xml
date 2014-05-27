@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/theme_background">
+
+	<TextView
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:textAppearance="?android:attr/textAppearanceSmall"
+		android:text="Active Booking"
+		android:id="@+id/shift_list_header"
+		android:textColor="@android:color/white"
+		android:tag="@string/font_helvetica"
+		android:background="@color/theme_green"
+		android:paddingLeft="@dimen/fragment_header_horizontal_padding"
+		android:paddingRight="@dimen/fragment_header_horizontal_padding"
+		android:paddingTop="@dimen/fragment_header_vertical_padding"
+		android:paddingBottom="@dimen/fragment_header_vertical_padding"
+		android:gravity="center"/>
+
+	<FrameLayout
+		android:layout_width="fill_parent"
+		android:layout_height="0dp"
+		android:layout_weight="1">
+
+		<view
+			xmlns:map="http://schemas.android.com/apk/res-auto"
+			android:id="@+id/prog_map_map"
+			class="com.google.android.gms.maps.MapView"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			map:uiZoomControls="false"/>
+
+		<Button
+			style="?android:attr/buttonStyleSmall"
+			android:layout_width="wrap_content"
+			android:layout_height="39dp"
+			android:id="@+id/turn_by_turn"
+			android:layout_gravity="right|bottom"/>
+
+	</FrameLayout>
+
+	<RelativeLayout
+		android:layout_width="fill_parent"
+		android:layout_height="0dp"
+		android:layout_weight="3"
+		android:background="@drawable/section_top_border_red"
+		android:padding="12dp">
+
+		<LinearLayout
+			android:orientation="horizontal"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:visibility="invisible"
+			android:id="@+id/prog_step1">
+
+			<Button
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:text="ARRIVED"
+				android:id="@+id/prog_status_arrived"
+				android:layout_weight="1"
+				style="@style/Cab9.Button.Green"
+				/>
+		</LinearLayout>
+
+		<LinearLayout
+			android:orientation="horizontal"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:id="@+id/prog_step2"
+			android:visibility="gone">
+
+			<Button
+				style="@style/Cab9.Button.Green"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:text="POB"
+				android:id="@+id/prog_status_pob"
+				android:layout_weight="4"/>
+
+			<Button
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:text="CANCEL"
+				android:id="@+id/prog_status_noshow"
+				style="@style/Cab9.Button.Red"
+				android:layout_weight="2"
+				/>
+		</LinearLayout>
+
+		<LinearLayout
+			android:orientation="horizontal"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:id="@+id/prog_step3"
+			android:visibility="gone">
+
+			<Button
+				style="@style/Cab9.Button.Green"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:text="CLEARING"
+				android:id="@+id/prog_status_clearing"
+				android:layout_weight="4"/>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:orientation="horizontal"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:id="@+id/prog_step4"
+			android:visibility="gone">
+
+			<Button
+				style="@style/Cab9.Button.Green"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:text="COMPLETED"
+				android:id="@+id/prog_status_completed"
+				android:layout_weight="4"/>
+		</LinearLayout>
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textAppearance="?android:attr/textAppearanceMedium"
+			android:text="#00000"
+			android:id="@+id/prog_id"
+			android:layout_below="@+id/prog_step1"
+			android:layout_alignParentLeft="true"
+			android:layout_alignParentStart="true"
+			android:textColor="@color/theme_green"/>
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textAppearance="?android:attr/textAppearanceMedium"
+			android:text="00/00/0000 00:00"
+			android:id="@+id/prog_time"
+			android:layout_alignRight="@+id/prog_step1"
+			android:layout_alignEnd="@+id/prog_step1"
+			android:layout_alignBottom="@+id/prog_id"
+			android:textColor="@android:color/white"/>
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textAppearance="?android:attr/textAppearanceSmall"
+			android:text="From"
+			android:id="@+id/textView"
+			android:layout_below="@+id/prog_id"
+			android:layout_alignParentLeft="true"
+			android:layout_alignParentStart="true"
+			android:textColor="@android:color/white"
+			android:layout_marginTop="8dp"/>
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textAppearance="?android:attr/textAppearanceMedium"
+			android:text="From Address"
+			android:id="@+id/prog_from"
+			android:layout_below="@+id/textView"
+			android:layout_alignParentLeft="true"
+			android:layout_alignParentStart="true"
+			android:textColor="@color/theme_green"
+			android:layout_alignRight="@+id/prog_step1"
+			android:layout_alignEnd="@+id/prog_step1"/>
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textAppearance="?android:attr/textAppearanceSmall"
+			android:text="To"
+			android:id="@+id/textView2"
+			android:layout_alignParentLeft="true"
+			android:layout_alignParentStart="true"
+			android:textColor="@android:color/white"
+			android:layout_marginTop="8dp"
+			android:layout_below="@+id/prog_from"/>
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textAppearance="?android:attr/textAppearanceMedium"
+			android:text="To Address"
+			android:id="@+id/prog_to"
+			android:layout_below="@+id/textView2"
+			android:layout_alignParentLeft="true"
+			android:layout_alignParentStart="true"
+			android:textColor="@color/theme_orange"
+			android:layout_alignRight="@+id/prog_from"
+			android:layout_alignEnd="@+id/prog_from"/>
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textAppearance="?android:attr/textAppearanceSmall"
+			android:text="Name"
+			android:id="@+id/textView3"
+			android:layout_below="@+id/prog_to"
+			android:layout_alignParentLeft="true"
+			android:layout_alignParentStart="true"
+			android:textColor="@android:color/white"
+			android:layout_marginTop="8dp"/>
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textAppearance="?android:attr/textAppearanceMedium"
+			android:text="Medium Text"
+			android:id="@+id/prog_name"
+			android:layout_below="@+id/textView3"
+			android:layout_alignParentLeft="true"
+			android:layout_alignParentStart="true"
+			android:textColor="@android:color/white"
+			android:layout_toLeftOf="@+id/prog_time"/>
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textAppearance="?android:attr/textAppearanceSmall"
+			android:text="Fare"
+			android:id="@+id/textView5"
+			android:layout_above="@+id/prog_name"
+			android:layout_alignRight="@+id/prog_to"
+			android:layout_alignEnd="@+id/prog_to"
+			android:textColor="@android:color/white"/>
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textAppearance="?android:attr/textAppearanceMedium"
+			android:text="£00.00"
+			android:id="@+id/prog_fare"
+			android:layout_below="@+id/textView5"
+			android:layout_alignRight="@+id/textView5"
+			android:layout_alignEnd="@+id/textView5"
+			android:textColor="@android:color/white"
+			android:layout_alignLeft="@+id/prog_time"
+			android:layout_alignStart="@+id/prog_time"
+			android:gravity="right"/>
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textAppearance="?android:attr/textAppearanceMedium"
+			android:text="07834702239"
+			android:id="@+id/prog_contact"
+			android:layout_below="@+id/prog_name"
+			android:layout_alignParentLeft="true"
+			android:layout_alignParentStart="true"
+			android:textColor="@android:color/white"/>
+
+		<LinearLayout
+			android:orientation="horizontal"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:visibility="gone"
+			android:id="@+id/prog_finished">
+
+			<Button
+				style="@style/Cab9.Button.Red"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:text="CLOSE"
+				android:id="@+id/prog_close"
+				android:layout_weight="1"/>
+		</LinearLayout>
+
+	</RelativeLayout>
+
+</LinearLayout><!-- From: file:/C:/Users/David/Documents/GitHub/Cab9Drivers/Cab9D/src/main/res/layout/fragment_booking_inprogress.xml -->

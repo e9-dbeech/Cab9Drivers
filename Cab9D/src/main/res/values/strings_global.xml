@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="global_application_name">Cab9</string>
+	<string name="global_google_map_key">AIzaSyAs7HrYIqEC-8j4IIzBdGfDQbAw96hJcWU</string>
+
+	<string name="global_navigation_drawer_open">Open navigation drawer</string>
+	<string name="global_navigation_drawer_close">Close navigation drawer</string>
+</resources>

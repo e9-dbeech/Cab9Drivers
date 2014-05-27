@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<style name="Theme.Cab9" parent="Theme.AppCompat.Light.DarkActionBar">
+		<item name="android:editTextStyle">@style/Cab9.EditText</item>
+		<item name="android:buttonStyle">@style/Cab9.Button</item>
+	</style>
+
+	<style name="Theme.Cab9.NoActionBar" parent="Theme.Cab9">
+		<item name="windowActionBar">false</item>
+		<item name="android:windowNoTitle">true</item>
+	</style>
+</resources>

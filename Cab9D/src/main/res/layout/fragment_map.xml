@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+	<view
+		xmlns:map="http://schemas.android.com/apk/res-auto"
+		android:id="@+id/map_map_map"
+		class="com.google.android.gms.maps.MapView"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		map:uiZoomControls="false"/>
+
+	<LinearLayout
+		android:orientation="horizontal"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_gravity="bottom"
+		android:paddingLeft="6dp"
+		android:paddingRight="6dp">
+		<Button
+			android:layout_width="0dp"
+			android:layout_height="fill_parent"
+			android:text="Next"
+			android:id="@+id/map_button_next"
+			android:layout_weight="1"
+			android:lines="2"
+			android:alpha="0.6"
+			style="@style/Cab9.Button.Orange"/>
+
+		<Button
+			android:layout_width="0dp"
+			android:layout_height="fill_parent"
+			android:text="Location"
+			android:id="@+id/map_button_location"
+			android:layout_weight="2"
+			android:lines="2"
+			android:alpha="0.6"
+			style="@style/Cab9.Button.Green"/>
+
+		<Button
+			android:layout_width="0dp"
+			android:layout_height="fill_parent"
+			android:text="Base"
+			android:id="@+id/map_button_base"
+			android:layout_weight="1"
+			android:lines="2"
+			android:alpha="0.6"
+			style="@style/Cab9.Button.Orange"/>
+	</LinearLayout>
+</FrameLayout>

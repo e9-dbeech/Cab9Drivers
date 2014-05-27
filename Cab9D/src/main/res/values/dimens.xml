@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<dimen name="navigation_drawer_width">240dp</dimen>
+    <dimen name="strip_vertical_padding">30dp</dimen>
+    <dimen name="strip_horizontal_padding">30dp</dimen>
+	<dimen name="row_vertical_padding">16dp</dimen>
+	<dimen name="row_horizontal_padding">20dp</dimen>
+    <dimen name="button_vertical_padding">18dp</dimen>
+    <dimen name="button_horizontal_padding">20dp</dimen>
+    <dimen name="input_vertical_spacing">15dp</dimen>
+    <dimen name="input_vertical_padding">12dp</dimen>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+	<dimen name="section_horizontal_padding">12dp</dimen>
+	<dimen name="section_vertical_padding">12dp</dimen>
+	<dimen name="profile_image_size">140dp</dimen>
+	<dimen name="text_margin">6dp</dimen>
+	<dimen name="profile_text_inset">12dp</dimen>
+	<dimen name="row_margin_bottom">2dp</dimen>
+	<dimen name="controls_box_padding">12dp</dimen>
+	<dimen name="list_item_horizontal_padding">16dp</dimen>
+	<dimen name="list_item_vertical_padding">8dp</dimen>
+	<dimen name="list_view_divider_height">2dp</dimen>
+
+	<dimen name="fragment_header_horizontal_padding">16dp</dimen>
+	<dimen name="fragment_header_vertical_padding">8dp</dimen>
+
+</resources>

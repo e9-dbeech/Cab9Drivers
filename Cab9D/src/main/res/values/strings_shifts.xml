@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="shifts_label_bookings">Offered</string>
+	<string name="shifts_label_accepted">Accepted</string>
+	<string name="shifts_label_missed">Missed</string>
+	<string name="shifts_label_rejected">Rejected</string>
+	<string name="shifts_text_currentshift">Current Shift</string>
+	<string name="shifts_button_endshift">END SHIFT</string>
+	<string name="shifts_button_changedetails">CHANGE DETAILS</string>
+	<string name="shifts_button_fetchprevious">VIEW PREVIOUS</string>
+	<string name="shifts_button_viewbookings">VIEW BOOKINGS</string>
+	<string name="shifts_list_heading">Previous Shifts</string>
+	<string name="shift_table_empty">No Shifts To Display</string>
+</resources>

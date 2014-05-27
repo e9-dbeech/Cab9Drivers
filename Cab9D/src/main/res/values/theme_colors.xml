@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<color name="theme_green">#26AE90</color>
+	<color name="theme_red">#D21D1D</color>
+	<color name="theme_orange">#ED9615</color>
+
+	<color name="theme_background">#FF2C3232</color>
+	<color name="theme_background_dark">#FF1D2826</color>
+
+	<color name="theme_white_transparent">#80CCCCCC</color>
+	<color name="theme_black_transparent">#80000000</color>
+</resources>

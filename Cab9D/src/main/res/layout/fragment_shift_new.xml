@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/theme_background">
+
+	<RelativeLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:paddingLeft="@dimen/section_horizontal_padding"
+		android:paddingTop="@dimen/section_vertical_padding"
+		android:paddingRight="@dimen/section_horizontal_padding"
+		android:paddingBottom="@dimen/section_vertical_padding"
+		android:background="@color/theme_red"
+		android:layout_marginTop="8dp"
+		android:id="@+id/shifts_info_box">
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textAppearance="?android:attr/textAppearanceMedium"
+			android:id="@+id/textView"
+			android:textColor="@android:color/white"
+			android:tag="@string/font_helvetica"/>
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textAppearance="?android:attr/textAppearanceMedium"
+			android:id="@+id/shifts_text_date"
+			android:layout_alignParentTop="true"
+			android:layout_alignParentRight="true"
+			android:layout_alignParentEnd="true"
+			android:textColor="@android:color/white"
+			android:tag="@string/font_helvetica"/>
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textAppearance="?android:attr/textAppearanceSmall"
+			android:id="@+id/shifts_text_start"
+			android:layout_below="@+id/shifts_text_date"
+			android:layout_centerHorizontal="true"
+			android:textColor="@android:color/white"
+			android:tag="@string/font_helvetica"
+			android:text="Start A New Shift"/>
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textAppearance="?android:attr/textAppearanceLarge"
+			android:text="Not On Shift"
+			android:id="@+id/shifts_text_length"
+			android:layout_below="@+id/shifts_text_start"
+			android:layout_centerHorizontal="true"
+			android:layout_alignParentEnd="false"
+			android:textSize="50sp"
+			android:textIsSelectable="false"
+			android:textColor="@android:color/white"
+			android:tag="@string/font_helvetica"/>
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textAppearance="?android:attr/textAppearanceSmall"
+			android:text="Vehicle"
+			android:id="@+id/shifts_text_vehicle"
+			android:textColor="@android:color/white"
+			android:layout_below="@+id/shifts_text_length"
+			android:layout_centerHorizontal="true"
+			android:tag="@string/font_helvetica"
+			android:visibility="gone"/>
+
+		<LinearLayout
+			android:orientation="horizontal"
+			android:layout_width="fill_parent"
+			android:layout_height="50dp"
+			android:layout_below="@+id/shifts_text_vehicle"
+			android:layout_alignLeft="@+id/textView"
+			android:layout_alignStart="@+id/textView"
+			android:id="@+id/linearLayout"
+			android:layout_marginTop="6dp">
+			<View
+				android:layout_width="0dp"
+				android:layout_height="1dp"
+				android:layout_weight="1"/>
+
+			<CheckBox
+				android:layout_width="50dp"
+				android:layout_height="match_parent"
+				android:id="@+id/shift_new_wheelchair"
+				android:checked="true"
+				android:background="@drawable/theme_selector_toggle_round"
+				android:button="@null"
+				android:enabled="false"/>
+
+			<View
+				android:layout_width="0dp"
+				android:layout_height="1dp"
+				android:layout_weight="2"/>
+
+			<CheckBox
+				android:layout_width="50dp"
+				android:layout_height="match_parent"
+				android:id="@+id/shift_new_babyseat"
+				android:checked="false"
+				android:background="@drawable/theme_selector_toggle_round"
+				android:button="@null"
+				android:enabled="false"/>
+
+			<View
+				android:layout_width="0dp"
+				android:layout_height="1dp"
+				android:layout_weight="2"/>
+
+			<CheckBox
+				android:layout_width="50dp"
+				android:layout_height="match_parent"
+				android:id="@+id/shift_new_childseat"
+				android:checked="false"
+				android:background="@drawable/theme_selector_toggle_round"
+				android:button="@null"
+				android:enabled="false"/>
+
+			<View
+				android:layout_width="0dp"
+				android:layout_height="1dp"
+				android:layout_weight="2"/>
+
+			<CheckBox
+				android:layout_width="50dp"
+				android:layout_height="match_parent"
+				android:id="@+id/shift_new_pets"
+				android:checked="false"
+				android:background="@drawable/theme_selector_toggle_round"
+				android:button="@null"
+				android:enabled="true"
+				android:focusableInTouchMode="true"
+				android:focusable="true"/>
+
+			<View
+				android:layout_width="0dp"
+				android:layout_height="1dp"
+				android:layout_weight="1"/>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:orientation="horizontal"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_below="@+id/linearLayout"
+			android:layout_centerHorizontal="true"
+			>
+
+			<TextView
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:textAppearance="?android:attr/textAppearanceSmall"
+				android:text="Wheelchair"
+				android:layout_weight="1"
+				android:gravity="center_horizontal"
+				android:textColor="@android:color/white"
+				android:textSize="12sp"
+				android:tag="@string/font_helvetica"/>
+
+			<TextView
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:textAppearance="?android:attr/textAppearanceSmall"
+				android:text="Baby Seat"
+				android:layout_weight="1"
+				android:gravity="center_horizontal"
+				android:textColor="@android:color/white"
+				android:textSize="12sp"
+				android:tag="@string/font_helvetica"/>
+
+			<TextView
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:textAppearance="?android:attr/textAppearanceSmall"
+				android:text="Child Seat"
+				android:layout_weight="1"
+				android:gravity="center_horizontal"
+				android:textColor="@android:color/white"
+				android:textSize="12sp"
+				android:tag="@string/font_helvetica"/>
+
+			<TextView
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:textAppearance="?android:attr/textAppearanceSmall"
+				android:text="Pets"
+				android:layout_weight="1"
+				android:gravity="center_horizontal"
+				android:textColor="@android:color/white"
+				android:textSize="12sp"
+				android:tag="@string/font_helvetica"/>
+		</LinearLayout>
+
+	</RelativeLayout>
+
+	<ScrollView
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:id="@+id/scrollView"
+		android:layout_weight="1"
+		android:padding="@dimen/controls_box_padding">
+
+		<LinearLayout
+			android:orientation="vertical"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:measureWithLargestChild="false"
+			>
+			<LinearLayout
+				android:orientation="horizontal"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				style="@style/Cab9.KeyValueStrip"
+				android:layout_marginBottom="@dimen/row_margin_bottom"
+				android:layout_marginLeft="4dp"
+				android:layout_marginRight="4dp">
+				<TextView
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:textAppearance="?android:attr/textAppearanceSmall"
+					android:text="Vehicle"
+					android:layout_weight="1"
+					android:layout_marginRight="16dp"
+					android:textColor="@color/theme_green"
+					android:textStyle="bold"
+					android:tag="@string/font_helvetica"
+					android:gravity="right"
+					android:layout_gravity="center_vertical"/>
+
+				<Spinner
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:id="@+id/spinner"
+					android:layout_weight="3"
+					android:spinnerMode="dialog"/>
+
+			</LinearLayout>
+
+			<LinearLayout
+				style="@style/Cab9.KeyValueStrip"
+				android:orientation="horizontal"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginBottom="@dimen/row_margin_bottom"
+				android:layout_marginLeft="4dp"
+				android:layout_marginRight="4dp"
+				android:id="@+id/linearLayout2">
+
+				<TextView
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:textAppearance="?android:attr/textAppearanceSmall"
+					android:text="Mileage"
+					android:layout_weight="1"
+					android:layout_marginRight="16dp"
+					android:textColor="@color/theme_green"
+					android:textStyle="bold"
+					android:tag="@string/font_helvetica"
+					android:gravity="right"
+					android:layout_gravity="center_vertical"/>
+
+				<EditText
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:inputType="number"
+					android:ems="10"
+					android:id="@+id/editText2"
+					android:layout_weight="3"
+					android:background="@drawable/theme_selector_edit_text_transparent"/>
+			</LinearLayout>
+
+			<Button
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:text="START SHIFT"
+				android:id="@+id/shifts_button_startshift"
+				style="@style/Cab9.Button.Green"
+				android:tag="@string/font_helvetica"
+				android:hapticFeedbackEnabled="false"/>
+
+		</LinearLayout>
+	</ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/theme_background_dark"
+              android:paddingLeft="@dimen/list_item_horizontal_padding"
+              android:paddingRight="@dimen/list_item_horizontal_padding"
+              android:paddingTop="@dimen/list_item_vertical_padding"
+              android:padding="@dimen/list_item_vertical_padding">
+
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:textAppearance="?android:attr/textAppearanceSmall"
+		android:id="@+id/booking_list_item_id"
+		android:text="#123456"
+		android:textColor="@android:color/white"
+		android:layout_alignParentTop="true"
+		android:layout_alignParentLeft="true"
+		android:layout_alignParentStart="true"
+		android:clickable="false"
+		android:focusable="false"/>
+
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:textAppearance="?android:attr/textAppearanceMedium"
+		android:text="Booking Origin"
+		android:id="@+id/booking_list_item_subtitle"
+		android:textColor="@color/theme_orange"
+		android:clickable="false"
+		android:focusable="false"
+		android:layout_alignTop="@+id/textView"
+		android:layout_alignParentLeft="true"
+		android:layout_alignParentStart="true"
+		android:layout_toLeftOf="@+id/textView"/>
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:textAppearance="?android:attr/textAppearanceSmall"
+		android:text="00:00"
+		android:id="@+id/booking_list_item_time"
+		android:textColor="@android:color/white"
+		android:textStyle="bold"
+		android:tag="@string/font_helvetica"
+		android:clickable="false"
+		android:focusable="false"
+		android:layout_alignParentTop="true"
+		android:layout_alignParentRight="true"/>
+
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:textAppearance="?android:attr/textAppearanceMedium"
+		android:text="£10.00"
+		android:id="@+id/textView"
+		android:textColor="@color/theme_green"
+		android:gravity="center"
+		android:textStyle="bold"
+		android:tag="@string/font_helvetica"
+		android:clickable="false"
+		android:focusable="false"
+		android:layout_alignParentRight="true"
+		android:layout_below="@+id/booking_list_item_time"/>
+
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:textAppearance="?android:attr/textAppearanceSmall"
+		android:text="0m"
+		android:id="@+id/booking_list_dist"
+		android:layout_below="@+id/booking_list_item_subtitle"
+		android:layout_alignParentRight="true"
+		android:layout_alignParentEnd="true"
+		android:textColor="@color/theme_red"/>
+
+</RelativeLayout>

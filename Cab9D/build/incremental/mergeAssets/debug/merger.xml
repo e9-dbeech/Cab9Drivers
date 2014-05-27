@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger>
+
+    <dataSet config="ComGoogleMapsAndroidAndroidMapsUtils021.aar" >
+        <source path="C:\Users\David\Documents\GitHub\Cab9Drivers\Cab9D\build\exploded-bundles\ComGoogleMapsAndroidAndroidMapsUtils021.aar\assets" />
+    </dataSet>
+    <dataSet config="ComAndroidSupportAppcompatV71900.aar" >
+        <source path="C:\Users\David\Documents\GitHub\Cab9Drivers\Cab9D\build\exploded-bundles\ComAndroidSupportAppcompatV71900.aar\assets" />
+    </dataSet>
+    <dataSet config="main" >
+        <source path="C:\Users\David\Documents\GitHub\Cab9Drivers\Cab9D\src\main\assets" >
+            <file
+                name="fonts/helveticaneue.ttf"
+                path="C:\Users\David\Documents\GitHub\Cab9Drivers\Cab9D\src\main\assets\fonts\helveticaneue.ttf" />
+        </source>
+    </dataSet>
+    <dataSet config="debug" >
+        <source path="C:\Users\David\Documents\GitHub\Cab9Drivers\Cab9D\src\debug\assets" />
+    </dataSet>
+
+</merger>

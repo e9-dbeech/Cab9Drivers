@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="login_heading">Login</string>
+	<string name="login_title">CAB 9</string>
+	<string name="login_email_hint">email</string>
+	<string name="login_password_hint">password</string>
+	<string name="login_login_button">LOGIN</string>
+	<string name="login_forgot_button">Forgot?</string>
+
+	<string name="login_spinner_logging">Logging In…</string>
+
+	<string name="login_error_other">Unknown Error</string>
+	<string name="login_error_missing_password">Please provide password.</string>
+	<string name="login_error_short_password">Password is too short.</string>
+	<string name="login_error_missing_email">Please provide email.</string>
+	<string name="login_error_short_email">Email too short.</string>
+	<string name="login_error_format_email">Email does not contain \'@\'.</string>
+	<string name="login_error_invalid_credentials">Invalid Credentials</string>
+	<string name="login_error_server_unavailable">Server Unavailable</string>
+	<string name="login_error_user_cancelled">User Cancelled</string>
+</resources>

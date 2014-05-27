@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/theme_background">
+
+	<TextView
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:textAppearance="?android:attr/textAppearanceLarge"
+		android:text="BOOKING OFFER"
+		android:id="@+id/textView"
+		android:layout_gravity="center_horizontal"
+		android:layout_weight="1"
+		android:gravity="center"
+		android:textColor="@android:color/white"
+		android:textSize="30sp"/>
+
+	<LinearLayout
+		android:orientation="vertical"
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:layout_weight="3"
+		android:gravity="center"
+		android:background="@color/theme_orange"
+		android:paddingLeft="@dimen/section_horizontal_padding"
+		android:paddingRight="@dimen/section_horizontal_padding"
+		android:paddingBottom="@dimen/section_vertical_padding"
+		android:paddingTop="@dimen/section_vertical_padding">
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textAppearance="?android:attr/textAppearanceSmall"
+			android:text="DATE"
+			android:layout_gravity="center_horizontal"
+			android:textColor="@android:color/background_dark"/>
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textAppearance="?android:attr/textAppearanceMedium"
+			android:text="00/00/0000 00:00"
+			android:id="@+id/offer_text_date"
+			android:textColor="@android:color/white"/>
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textAppearance="?android:attr/textAppearanceSmall"
+			android:text="PICKUP"
+			android:id="@+id/textView3"
+			android:layout_gravity="center_horizontal"
+			android:textColor="@android:color/background_dark"/>
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textAppearance="?android:attr/textAppearanceMedium"
+			android:text="To"
+			android:id="@+id/offer_text_from"
+			android:textColor="@android:color/white"/>
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textAppearance="?android:attr/textAppearanceSmall"
+			android:text="DROP OFF"
+			android:id="@+id/textView5"
+			android:layout_marginTop="10dp"
+			android:textColor="@android:color/background_dark"/>
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textAppearance="?android:attr/textAppearanceMedium"
+			android:text="From"
+			android:id="@+id/offer_text_to"
+			android:textColor="@android:color/white"/>
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textAppearance="?android:attr/textAppearanceSmall"
+			android:text="FARE"
+			android:id="@+id/textView7"
+			android:layout_marginTop="10dp"
+			android:textColor="@android:color/background_dark"/>
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textAppearance="?android:attr/textAppearanceMedium"
+			android:text="£00.00 (Cash)"
+			android:id="@+id/offer_text_fare"
+			android:textColor="@android:color/white"/>
+
+	</LinearLayout>
+
+	<TextView
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:textAppearance="?android:attr/textAppearanceLarge"
+		android:text="00:30"
+		android:id="@+id/textView2"
+		android:layout_weight="2"
+		android:gravity="center"
+		android:textColor="@color/theme_green"
+		android:textSize="70sp"
+		/>
+
+	<LinearLayout
+		android:orientation="horizontal"
+		android:layout_width="fill_parent"
+		android:layout_height="0dp"
+		android:layout_weight="1"
+		android:paddingLeft="@dimen/section_horizontal_padding"
+		android:paddingRight="@dimen/section_horizontal_padding"
+		>
+
+		<Button
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:text="ACCEPT"
+			android:id="@+id/offer_button_accept"
+			style="@style/Cab9.Button.Green"
+			android:layout_weight="1"
+			/>
+
+		<Button
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:text="REJECT"
+			android:id="@+id/offer_button_reject"
+			style="@style/Cab9.Button.Red"
+			android:layout_weight="1"
+			/>
+	</LinearLayout>
+</LinearLayout>

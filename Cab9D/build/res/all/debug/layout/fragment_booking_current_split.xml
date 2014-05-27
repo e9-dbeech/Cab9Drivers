@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/theme_background">
+
+
+</LinearLayout><!-- From: file:/C:/Users/David/Documents/GitHub/Cab9Drivers/Cab9D/src/main/res/layout/fragment_booking_current_split.xml -->

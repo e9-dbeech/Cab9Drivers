@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<string name="bookings_section_header">Bookings</string>
+	<string name="bookings_list_heading">Bookings</string>
+	<string name="bookings_table_empty">No Bookings to display</string>
+</resources>

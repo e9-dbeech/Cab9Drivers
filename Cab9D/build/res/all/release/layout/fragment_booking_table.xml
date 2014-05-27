@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+	<TextView
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:textAppearance="?android:attr/textAppearanceLarge"
+		android:text="@string/bookings_list_heading"
+		android:id="@+id/shift_list_header"
+		android:textColor="@android:color/white"
+		android:background="@color/theme_green"
+		android:paddingLeft="@dimen/fragment_header_horizontal_padding"
+		android:paddingRight="@dimen/fragment_header_horizontal_padding"
+		android:paddingTop="@dimen/fragment_header_vertical_padding"
+		android:paddingBottom="@dimen/fragment_header_vertical_padding"
+		android:gravity="center"/>
+	<ListView
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:id="@android:id/list"
+		android:layout_gravity="center_horizontal"
+
+		tools:listitem="@layout/include_booking_list_item"
+		android:divider="@color/theme_background"
+		android:dividerHeight="@dimen/list_view_divider_height"
+		/>
+	<TextView
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:id="@android:id/empty"
+		android:text="@string/bookings_table_empty"/>
+</LinearLayout><!-- From: file:/C:/Users/David/Desktop/Final/Cab9Drivers/Cab9D/src/main/res/layout/fragment_booking_table.xml -->
